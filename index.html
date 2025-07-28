@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Fakebook</div>
+    <input type="text" placeholder="Search Facebook" />
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Friends</a>
+      <a href="#">Messages</a>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">News Feed</a></li>
+        <li><a href="#">Groups</a></li>
+      </ul>
+    </div>
+
+    <!-- Feed -->
+    <div class="feed">
+      <div class="post-box">
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+        <button onclick="addPost()">Post</button>
+      </div>
+
+      <div id="posts">
+        <!-- Posts will appear here -->
+        <div class="post">
+          <h4>Your Name</h4>
+          <p>Hello from fakebook!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
